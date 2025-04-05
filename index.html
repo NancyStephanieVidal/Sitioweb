@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Pagina web</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar section-content">
+                <a href="#" class="nav-logo">
+                    <h2 class="logo-text">👩🏻‍💻 Pagina</h2>
+                </a>
+                <ul class="nav-menu">
+                    <button id="menu-close-button" class="fas fa-times"></button>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#conocenos" class="nav-link">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#Gallery" class="nav-link">Galeria</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#metric_results" class="nav-link">Informacion areas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#process" class="nav-link">Procesos</a>
+                    </li>
+                </ul>
+
+                <button id="menu-open-button" class="fas fa-bars"></button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <div class="section-content">
+                    <div class="hero-details">
+                        <marquee>
+                            <h2 class="title">Central de Medios</h2>
+                        </marquee>
+                            <h3 class="subtitle">En Central de Medios hemos evolucionado ante la necesidad de soluciones integrales de las Unidades de Negocio y Despachos.</h3>
+                        <p class="description">
+                                ° Seguimos construyendo alianzas estratégicas que no sólo aseguran el alcance de la comunicación, sino que acercan a las Unidades de Negocio a la ideología y valores del Grupo.                            
+                                <br><br>
+                                ° Nuestras funciones se han diversificado y hemos encontrado una gran área de oportunidad al apoyar a nuestros clientes , conectándolos con las instancias transversales como Protección Civil, Unidad de Género, etc.                           
+                                <br><br>
+                                ° También estamos colaborando con áreas como Capital Humano y Grupo EKT, como un frente unificado, para que cerrar el círculo de su organización interna. 
+                            <br><br><br>                          
+                            Todo esto nos ha ayudado a consolidar nuestro lugar como un referente central en la organización.
+                        </p>
+
+                        
+                        <div class="buttons">
+                            <a href="#metric_results" class="button areas">Informacion areas</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image-wrapper">
+                        <img src="images/organ-2.png" alt="Hero" class="hero-image">
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="about-section"  id="conocenos">
+                <div class="section-content">
+                    <div class="about-image-wrapper">
+                        <img src="images/conocenos.png" alt="conocenos" class="about-image">
+                    </div>
+                    <div class="about-details">
+                        <h2 class="section-title">Conocenos</h2>
+                        <p class="text">La vida es crecimiento. Si dejamos de crecer, estamos muertos tecnica y espiritualmente ...</p>
+                        <p class="text">Morihei Ueshiba</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="gallery-section"  id="Gallery">
+                <marquee>
+                    <h2 class="section-title">Galeria</h2>
+                </marquee>
+                <div class="section-content">
+                    <ul class="gallery-list"> 
+                        <li class="gallery-item">
+                            <img src="images/img1-1.png" alt="Gallery" class="gallery-image">
+                        </li>
+
+                        <li class="gallery-item">
+                            <img src="images/img2.2.png" alt="Gallery" class="gallery-image">
+                        </li>
+
+                        <li class="gallery-item">
+                            <img src="images/img3-3.jpg" alt="Gallery" class="gallery-image">
+                        </li>
+
+                        <li class="gallery-item">
+                            <img src="images/img4-4.png" alt="Gallery" class="gallery-image">
+                        </li>
+
+                        <li class="gallery-item">
+                            <img src="images/img5-5.jpg" alt="Gallery" class="gallery-image">
+                        </li>
+
+                        <li class="gallery-item">
+                            <img src="images/img6-6.jpg" alt="Gallery" class="gallery-image">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+
+            <section class="table-section" id="metric_results">
+                <h2 class="section-title">Carga de datos dinamicamente</h2>
+                <div class="section-content">
+                    <table id="tabla-dinamica">
+                        <thead>
+                            <tr>
+                                <th>Areas</th>
+                                <th>Detalles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 🔴 Boton rojo</td>
+                                <td><span class="toggle-btn" onclick="toggleRow(0)">Mostrar Informacion</span></td>
+                            </tr>
+                            <tr class="details-row" style="display: none;">
+                                <td colspan="3">
+                                    <p><strong>Sol</strong></p>
+                                    <p><strong>Angel</strong></p>
+                                    <p><strong>Viri</strong></p>
+                                    <p><strong>Cinthia</strong></p>
+                                    <p><strong>Julio</strong></p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> 🟡 Procesos</td>
+                                <td><span class="toggle-btn" onclick="toggleRow(1)">Mostrar Informacion</span></td>
+                            </tr>
+                            <tr class="details-row" style="display: none;">
+                                <td colspan="3">
+                                    <p><strong>Paola</strong></p>
+                                    <p><strong>Vicky</strong></p>
+                                    <p><strong>Nono</strong></p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> 🔵 Web Content</td>
+                                <td><span class="toggle-btn" onclick="toggleRow(2)">Mostrar Informacion</span></td>
+                            </tr>
+                            <tr class="details-row" style="display: none;">
+                                <td colspan="3">
+                                    <p><strong>Edu</strong></p>
+                                    <p><strong>Ivan</strong></p>
+                                    <p><strong>Christofer</strong></p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> 🟢 Diseño</td>
+                                <td><span class="toggle-btn" onclick="toggleRow(3)">Mostrar Informacion</span></td>
+                            </tr>
+                            <tr class="details-row" style="display: none;">
+                                <td colspan="3">
+                                    <p><strong>David</strong></p>
+                                    <p><strong>Sam</strong></p>
+                                    <p><strong>Mar</strong></p>
+                                    <p><strong>Jason</strong></p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> 🟠 Ejecutivos de cuenta</td>
+                                <td><span class="toggle-btn" onclick="toggleRow(4)">Mostrar Informacion</span></td>
+                            </tr>
+                            <tr class="details-row" style="display: none;">
+                                <td colspan="3">
+                                    <p><strong>Cindy</strong></p>
+                                    <p><strong>Alfredo</strong></p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> 🟣 Redes</td>
+                                <td><span class="toggle-btn" onclick="toggleRow(5)">Mostrar Informacion</span></td>
+                            </tr>
+                            <tr class="details-row" style="display: none;">
+                                <td colspan="3">
+                                    <p><strong>Armando</strong></p>
+                                    <p><strong>Athenea</strong></p>
+                                </td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                </div>
+                <br><br>
+            </section>
+
+
+            <section class="gallery-section" id="process">
+                <div class="section-content">
+                    <h2 class="section-title">Procesos</h2>
+                    <div class="columna">
+                        <center>
+                            <img class="imag" src="images/imag1.png">
+                        </center>
+                        <center>
+                            <h2>
+                                <strong>Envios</strong>
+                            </h2>
+                        </center>
+                        <br>
+                        <p class="text">
+                            ° Mails -  15 a 20 x semana
+                            <br>
+                            ° Notificaciones 15 x semana + prog. permanentes
+                            <br>
+                            ° COmunicados Zeus 10 x semana
+                            <br>
+                            ° Newsletter BCI , Cultura, Socio de Película, BUPA
+                            <br>
+                            ° Mails TVA - 3 x día
+                            <br>
+                            ° Newsletter Totalplay y Cultura Geografía, CH
+                        </p>
+                    </div>
+
+                    <div class="columna">
+                        <center>
+                            <img class="imag" src="images/imag2.png">
+                        </center>
+                        <center>
+                            <h2>
+                                <strong>Programacion medios</strong>
+                            </h2>
+                        </center>
+                        <br>
+                        <p class="text">
+                            ° Zeus GS - semanal
+                            <br>
+                            ° Pantallas - 3 veces x semana
+                            <br>
+                            ° Wall Paper - semanal
+                            <br>
+                            ° Protector de pantalla – 2 veces x semana
+                            <br>
+                            ° Colocación de acrílicos baños y elevadores
+                            <br>
+                            ° Envío Entre Socios
+                        </p>
+                    </div>
+
+                    <div class="columna">
+                        <center>
+                            <img class="imag" src="images/imag3.png">
+                        </center>
+                        <center>
+                            <h2>
+                                <strong>Seguimiento y procesos</strong>
+                            </h2>
+                        </center>
+                        <br>
+                        <p class="text">
+                            ° Seguimiento de materiales de la pauta
+                            <br>
+                            ° Creación de Órdenes de Trabajo y QRs
+                            <br>
+                            ° Reportes de Trivia y clics de portal
+                            <br>
+                            ° Registros -smartsheets
+                            <br>                            
+                            ° Webinars
+                            <br>
+                            ° Envíos emergentes de Transporte GS y Negocio
+                        </p>
+                        <br><br><br>
+                        <br><br><br>
+                    </div>                    
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+        <script src="table.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
+</html>
